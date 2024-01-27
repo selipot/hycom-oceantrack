@@ -8,4 +8,4 @@ This repository contains:
 
 - `metadata-file.yaml` : The required YAML file for the [AWS Open Data Program](https://aws.amazon.com/opendata/).
 
-- `data-bucket-descrition.md` : A description of the organization and structure of the dataset in the AWS S3 bucket `hycom-25-global`.
+- `data-bucket-descrition.md` : A description of the organization and structure of the dataset in the AWS S3 bucket [`hycom-25-global`]().
