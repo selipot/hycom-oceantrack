@@ -57,6 +57,12 @@ Please note that unless automatically decoded by a software method (such as read
 
 The [zarr chunks](https://zarr.readthedocs.io/en/stable/tutorial.html#chunk-optimizations) for the core variables **u** and **v** are (720, 1, 1, 9000) such as the data are optimized for analysis along the time dimension (and X dimension).
 
+<u>Note about model velocity depth:</u> 
+We reproduce here an excerpt from [Arbic et al. 2022](https://dx.doi.org/10.1029/2022JC018551) pertaining to the model depths : 
+
+*The global HYCOM simulation employs nominal 1/25° horizontal grid spacing and 41 hybrid layers (Bleck, 2002) covering the vertical direction. HYCOM employs terrain-following coordinates in shallow waters and isopycnal coordinates in the subsurface open ocean. In the near-surface open ocean, the uppermost 14 layers are in z-mode, with seven z-levels, having spacing ranging from 1.00 to 6.87 m, in the uppermost 30 m (Figure 1). The HYCOM “0 m” (surface) results actually represent the midpoint of the uppermost layer. The HYCOM “15 m” results represent interpolations to 15 m. The interpolation largely reflects results from the HYCOM level at 13.185 m, which lies in between adjacent levels at 8.38 and 18.55 m. The latter three depth values represent middepth points of the respective vertical layers in which they lie.*
+
+
 Sea surface height data are contained in stores `hycom12-ssh-x-rechunked-corr.zarr` with `x` from 1 to 12. These stores have the same dimensions and coordinates as the velocity data stores except for the coordinate and dimension **Depth** (Depth). Their *Data variables* are:
 - **ssh** (time, Y, X): sea surface height, m,
 - **steric_ssh** (time, Y, X): steric change in sea surface height, m.
