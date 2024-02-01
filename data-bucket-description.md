@@ -63,6 +63,8 @@ Sea surface height data are contained in stores `hycom12-ssh-x-rechunked-corr.za
 
 The ssh is the sum of the steric ssh and the non steric ssh which can be calculated as nonsteric_ssh = ssh - steric_ssh.
 
+The bathymetry of the model is also provided in the file `hycom12-bathy.zarr`. The variables **bathymetry**, **Latitude**, and **Longitude** all have dimensions **Y**: 7055 and **X**: 9000.
+
 #### 2. `hycom-25-global/lagrangian/`
 
 The Lagrangian dataset is constituted of 22 [zarr stores](https://zarr.readthedocs.io/en/stable/). There are 11 stores for numerical particles advected at the surface of the model (0 m) in stores `global_hycom_0m_step_x.zarr` with `x` from 1 to 11, and 11 stores for numerical particles advected at 15 m depth in stores `global_hycom_15m_step_x.zarr` with `x` from 1 to 11. Each zarr store contains either 593,292 (0 m) or 587,225 (15 m) particle trajectories at 1440 hourly time steps or 60 days.
