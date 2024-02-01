@@ -45,11 +45,11 @@ DataAtWork:
       URL: https://github.com/Cloud-Drift/clouddrift
       AuthorName:
       AuthorURL:
-  Publications:
-    - Title:
-      URL:
-      AuthorName:
-      AuthorURL:
+  Publications: 
+    - Title: Near-Surface Oceanic Kinetic Energy Distributions From Drifter Observations and Numerical Models
+      URL: https://dx.doi.org/10.1029/2022JC018551
+      AuthorName: Brian K. Arbic, Shane Elipot, et al.
+      AuthorURL: https://arbic.earth.lsa.umich.edu, https://selipot.github.io
 DeprecatedNotice:
 ADXCategories:
   -    
