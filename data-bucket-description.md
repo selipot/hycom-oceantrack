@@ -4,10 +4,9 @@ This is a description of the dataset contained in the AWS S3 bucket "hycom-25-gl
 
 This bucket contains two distinct and related datasets:
 
-1. The first dataset in `hycom-25-global/eulerian/` consists of Eulerian (fixed grid) field variables which were generated from a 1-year simulation of the HYCOM model as described in [Arbic et al. 2022](https://dx.doi.org/10.1029/2022JC018551). The version of the dataset used for this publication can be accessed via the OSiRIS infrastructure of the University of Michigan-Ann Harbor. Details for accessing OSiRIS can be obtained by contacting Dr. Brian K. Arbic (arbic@umich.edu).
-The S3 bucket described here provides an alternative distribution of the same data (except model bottom velocity data) but organized differently as cloud-optimized [zarr directory stores](https://zarr.readthedocs.io/en/stable/).
+1. The dataset in `hycom-25-global/eulerian/` consists of Eulerian (fixed grid) field variables which were generated from a 1-year simulation of the HYCOM model as described in [Arbic et al. 2022](https://dx.doi.org/10.1029/2022JC018551). The S3 bucket described here provides these data as cloud-optimized [zarr directory stores](https://zarr.readthedocs.io/en/stable/).
 
-2. The second dataset in `hycom-25-global/lagrangian/` consists of Lagrangian particle trajectories advected in the velocity fields of the model at two depth (0 m and 15 m) and are not available elsewhere.
+2. The dataset in `hycom-25-global/lagrangian/` consists of Lagrangian particle trajectories advected in the velocity fields of the model at two depth (0 m and 15 m) and are not available elsewhere.
 
 A manuscript providing further details on how the Lagrangian dataset was produced with the [Ocean Parcels software](https://oceanparcels.org) is in preparation. Once submitted this manuscript will be referenced here. In the meantime, for further information not available in this README file, please email Dr. Shane Elipot at selipot@miami.edu
 
@@ -47,7 +46,7 @@ Velocity data are contained in zarr stores `hycom12-x-rechunked-corr.zarr` with 
     - **Y** (Y), 1 to 7055, no unit,
     - **time** (time): 0 to 719 (or 838), hours since first step.
 
-Please note that unless automatically decoded by a software method (such as reading the zarr store with python [Xarray](https://docs.xarray.dev/en/stable/)), the units of **time** are hours since the first step of the set/store.
+Please note that the units of **time** are hours since the first step of the set/store.
 
 - The *Data variables* and their dimensions are:
     - **Latitude** (Y, X) : degree north,
