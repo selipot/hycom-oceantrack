@@ -8,7 +8,7 @@ This bucket contains two distinct and related datasets:
 
 2. The dataset in `hycom-25-global/lagrangian/` consists of Lagrangian particle trajectories advected in the velocity fields of the model at two depth (0 m and 15 m) and are not available elsewhere.
 
-A manuscript providing further details on how the Lagrangian dataset was produced with the [Ocean Parcels software](https://oceanparcels.org) is in preparation. Once submitted this manuscript will be referenced here. In the meantime, for further information not available in this README file, please email Dr. Shane Elipot at selipot@miami.edu
+A manuscript providing further details on how the Lagrangian dataset was produced with the [Ocean Parcels software](https://oceanparcels.org) is in preparation. Once submitted this manuscript will be referenced here. In the meantime, for further information not available in this README file, please email Dr. Shane Elipot at selipot@miami.edu.
 
 #### 1. `hycom-25-global/eulerian/`
 
@@ -69,6 +69,8 @@ Sea surface height data are contained in stores `hycom12-ssh-x-rechunked-corr.za
 The ssh is the sum of the steric ssh and the non steric ssh which can be calculated as nonsteric_ssh = ssh - steric_ssh.
 
 The bathymetry of the model is also provided in the file `hycom12-bathy.zarr`. The variables **bathymetry**, **Latitude**, and **Longitude** all have dimensions **Y**: 7055 and **X**: 9000.
+
+Please note that these Eulerian model data are alternatively available as NetCDF files through the OSiRIS/Globus infrastructure at [OSiRIS (2024), Non-assim HYCOM 1/25 SSH and Surface velocities for 2014]({https://app.globus.org/file-manager?origin_id=e658b2aa-c5b5-455c-8bd9-49d361ac0bda&origin_path=%2F}).
 
 #### 2. `hycom-25-global/lagrangian/`
 
