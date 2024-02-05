@@ -1,5 +1,5 @@
 Name: Eulerian and Lagrangian near-surface velocity and sea surface height from one year of the global HYbrid Coordinate Ocean Model (HYCOM)
-Description: A joint dataset of simulated oceanic velocities at 0m and 15m depth, sea surface height, and Lagrangian particle trajectories from the global HYbrid Coordinate Ocean Model (HYCOM) for the year 2014.
+Description: A dataset of simulated oceanic velocities at 0m and 15m depth, sea surface height, and Lagrangian particle trajectories from a global 1/25th degree HYbrid Coordinate Ocean Model (HYCOM) for the year 2014.
 Documentation: https://github.com/selipot/hycom-25-global
 Contact: https://github.com/selipot/hycom-25-global/issues
 ManagedBy: Shane Elipot
@@ -36,7 +36,7 @@ DataAtWork:
       Services:
     - Title: HYCOM Lagrangian tutorial
       URL: https://github.com/selipot/hycom-25-global/notebooks/
-      NotebookURL: https://github.com/selipot/hycom-25-global/notebooks/hycom_eulerian.ipynb
+      NotebookURL: https://github.com/selipot/hycom-25-global/notebooks/hycom_lagrangian.ipynb
       AuthorName: Shane Elipot
       AuthorURL: https://selipot.github.io
       Services:  
