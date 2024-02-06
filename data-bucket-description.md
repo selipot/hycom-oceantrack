@@ -1,16 +1,16 @@
 ## Eulerian and Lagrangian near-surface velocity and sea surface height from one year of the global HYbrid Coordinate Ocean Model (HYCOM)
 
-This is a description of the dataset contained in the AWS S3 bucket "hycom-25-global" available at [https://]()
+This is a description of the dataset contained in the publicly available AWS S3 bucket "hycom-global-drifters".
 
 This bucket contains two distinct and related datasets:
 
-1. The dataset in `hycom-25-global/eulerian/` consists of Eulerian (fixed grid) field variables which were generated from a 1-year simulation of the HYCOM model as described in [Arbic et al. 2022](https://dx.doi.org/10.1029/2022JC018551). The S3 bucket described here provides these data as cloud-optimized [zarr directory stores](https://zarr.readthedocs.io/en/stable/).
+1. The dataset in `hycom-global-drifters/eulerian/` consists of Eulerian (fixed grid) field variables which were generated from a 1-year simulation of the HYCOM model as described in [Arbic et al. 2022](https://dx.doi.org/10.1029/2022JC018551). The S3 bucket described here provides these data as cloud-optimized [zarr directory stores](https://zarr.readthedocs.io/en/stable/).
 
-2. The dataset in `hycom-25-global/lagrangian/` consists of Lagrangian particle trajectories advected in the velocity fields of the model at two depth (0 m and 15 m) and are not available elsewhere.
+2. The dataset in `hycom-global-drifters/lagrangian/` consists of Lagrangian particle trajectories advected in the velocity fields of the model at two depth (0 m and 15 m) and are not available elsewhere.
 
 A manuscript providing further details on how the Lagrangian dataset was produced with the [Ocean Parcels software](https://oceanparcels.org) is in preparation. Once submitted this manuscript will be referenced here. In the meantime, for further information not available in this README file, please email Dr. Shane Elipot at selipot@miami.edu.
 
-#### 1. `hycom-25-global/eulerian/`
+#### 1. `hycom-global-drifters/eulerian/`
 
 The data correspond to field variables at 8759 hourly time steps from 2014-01-01T01:00:00 to 2014-12-31T23:00:00. These data are split in 12 zarr stores containing 720 hourly steps or 60 days of data, for stores number 1 to 11, and a 12<sup>th</sup> store with 839 steps to complete the year. The data are further split between velocity data and sea surface height data for a total of 24 stores. The date range and steps of each of the two sets of 12 stores are:
 
@@ -72,7 +72,7 @@ The bathymetry of the model is also provided in the file `hycom12-bathy.zarr`. T
 
 Please note that these Eulerian model data are alternatively available as NetCDF files through the OSiRIS/Globus infrastructure at [OSiRIS (2024), Non-assim HYCOM 1/25 SSH and Surface velocities for 2014]({https://app.globus.org/file-manager?origin_id=e658b2aa-c5b5-455c-8bd9-49d361ac0bda&origin_path=%2F}).
 
-#### 2. `hycom-25-global/lagrangian/`
+#### 2. `hycom-global-drifters/lagrangian/`
 
 The Lagrangian dataset is constituted of 22 [zarr stores](https://zarr.readthedocs.io/en/stable/). There are 11 stores for numerical particles advected at the surface of the model (0 m) in stores `global_hycom_0m_step_x.zarr` with `x` from 1 to 11, and 11 stores for numerical particles advected at 15 m depth in stores `global_hycom_15m_step_x.zarr` with `x` from 1 to 11. Each zarr store contains either 593,292 (0 m) or 587,225 (15 m) particle trajectories at 1440 hourly time steps or 60 days.
 
