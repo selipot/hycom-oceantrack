@@ -22,7 +22,7 @@ Citation: Pending
 Resources:
   - Description: HYCOM Eulerian and Lagrangian velocity and sea surface height
     ARN: arn:aws:s3:::hycom-global-drifters
-    Region: us-east-2
+    Region: us-west-2
     Type: S3 Bucket
     Explore:
     - [Browse Bucket](https://registry.opendata.aws/hycom-global-drifters/index.html)

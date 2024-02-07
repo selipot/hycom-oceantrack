@@ -1,4 +1,4 @@
-# hycom-25-global
+# hycom-global-drifters
 
 This repository contains:
 
