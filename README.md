@@ -1,5 +1,8 @@
 # hycom-oceantrack
 
+![GIF File](tutorials/traj-robinson-0-60-hsv.gif)
+
+
 This repository accompanies [**HYCOM OceanTrack:  Integrated HYCOM Eulerian Fields and Lagrangian Trajectories Dataset**](https://registry.opendata.aws/hycom-global-drifters/index.html) which is available through the AWS Open Data program. It contains:
 
 - `data-bucket-descrition.md` : A description or *readme* file of the organization and structure of the dataset in the AWS S3 bucket [`hycom-global-drifters`]().
