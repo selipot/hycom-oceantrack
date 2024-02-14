@@ -2,7 +2,7 @@
 
 This repository accompanies [**HYCOM OceanTrack:  Integrated HYCOM Eulerian Fields and Lagrangian Trajectories Dataset**](https://registry.opendata.aws/hycom-global-drifters/index.html) which is available through the AWS Open Data program. 
 
-The animation below depicts the trajectories of nearly 588,000 particles advected for 60 days at 15 m depth within the hourly velocity field of a 1/25 degree HYCOM simulation. The particles are colored by their longitude (with a repeated colorscale) at the middle time of their 60-day trajectories. As such, during the first half of the animation you can visualize the longitudes where the particles will be at day 30. During the second half, you can visualize the longitudes where the particles used to be.
+The animation below depicts the trajectories of nearly 588,000 particles advected for 60 days at 15 m depth within the hourly velocity field of a 1/25 degree HYCOM simulation. The coloring of the particles is determined by their longitude, using a repeating color scale, at the halfway point of their 60-day journeys. This means that in the first half of the animation, you are able to see the longitudinal positions the particles will reach by day 30. In the latter half, you are able to see the longitudinal positions where the particles were at day 30.
 
 ![GIF File](tutorials/traj-robinson-0-60-hsv.gif)
 
