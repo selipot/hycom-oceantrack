@@ -1,0 +1,13 @@
+name: hycom-oceantrack
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9,<3.12
+  - cartopy 0.22.0
+  - clouddrift 0.31.0
+  - matplotlib 3.8.*
+  - numpy 1.26.*
+  - xarray 2024.1.*
+  - s3fs 2024.2.*
+  - cmocean 3.1.*
+  - spectrum 0.8.*
