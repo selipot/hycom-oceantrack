@@ -8,12 +8,13 @@ We also provide in `parcels/` some Ocean Parcels python script and LSF job scrip
 
 - `README.md`: this file.
 
-- `convert/series_zarr_uv.py`: Code to create 11 zarr archives from the individual 8759 velocity files.
+- `convert/series_zarr_uv.py`: Scripts to create 11 zarr archives from the individual 8759 velocity files.
 
-- `convert/series_zarr_ssh.py`: Code to create 11 zarr archives from the individual 8759 SSH files.
+- `convert/series_zarr_ssh.py`: Scripts to create 11 zarr archives from the individual 8759 SSH files.
 
-- `convert/rechunk_[uv,ssh]_series.py`: Code to re-chunk the [uv,ssh] zarr stores 
+- `convert/rechunk_[uv,ssh]_series.py`: Scripts to re-chunk the [uv,ssh] zarr stores 
 
+- `convert/correct_[uv,ssh]_zarr_stores.py`: Scripts to correct the outputs from the rechunker. 
 
 - `parcels/make-ragged-from-parcels-pra.py` : Python script used to 
     - assemble foward and backward simulations into a single zarr file,
