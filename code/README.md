@@ -2,17 +2,17 @@
 
 Here we provide samples of python scripts that were used to generate the datasets found in [**HYCOM OceanTrack:  Integrated HYCOM Eulerian Fields and Lagrangian Trajectories Dataset**](https://registry.opendata.aws/hycom-global-drifters/index.html) which is available through the AWS Open Data program. 
 
-We provide in the `convert/` directory example python scripts that were used to convert individual velocity and SSH NetCDF files into zarr archives thanks to the [rechunker](https://github.com/pangeo-data/rechunker) python package. This library was written following the epic community [discussion](https://discourse.pangeo.io/t/best-practices-to-go-from-1000s-of-netcdf-files-to-analyses-on-a-hpc-cluster/588) that occured on [Pangeo](https://pangeo.io).
+In the `convert/` directory, we provide example python scripts that were used to convert individual velocity and Sea Surface Height (SSH) NetCDF files into zarr archives thanks to the [rechunker](https://github.com/pangeo-data/rechunker) Python package. This library was written following the epic community [discussion](https://discourse.pangeo.io/t/best-practices-to-go-from-1000s-of-netcdf-files-to-analyses-on-a-hpc-cluster/588) that occured on [Pangeo](https://pangeo.io).
 
-We also provide in `parcels/` some Ocean Parcels python script and LSF job script that were used to generate the simulated trajectories.
+We also provide in `parcels/` some [Ocean Parcels](https://oceanparcels.org) Python scripts and LSF job script that were used to generate the simulated trajectories.
 
 - `README.md`: this file.
 
-- `convert/series_zarr_uv.py`: Scripts to create 11 zarr archives from the individual 8759 velocity files.
+- `convert/series_zarr_uv.py`: Scripts to create 11 zarr archives from the original 8759 individual velocity NetCDF files.
 
-- `convert/series_zarr_ssh.py`: Scripts to create 11 zarr archives from the individual 8759 SSH files.
+- `convert/series_zarr_ssh.py`: Scripts to create 11 zarr archives from the original 8759 individual SSH NetCDF files.
 
-- `convert/rechunk_[uv,ssh]_series.py`: Scripts to re-chunk the [uv,ssh] zarr stores 
+- `convert/rechunk_[uv,ssh]_series.py`: Scripts to re-chunk the zarr stores. 
 
 - `convert/correct_[uv,ssh]_zarr_stores.py`: Scripts to correct the outputs from the rechunker. 
 
