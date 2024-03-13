@@ -16,8 +16,13 @@ We also provide in `parcels/` some [Ocean Parcels](https://oceanparcels.org) Pyt
 
 - `convert/correct_[uv,ssh]_zarr_stores.py`: Scripts to correct the outputs from the rechunker. 
 
+- `parcels/global_hycom_15m_step_i.py` : Python script used with the Ocean Parcels software to advect particles in the HYCOM velocity fields. Note that this script uses the HYCOM fields saved as NetCDF files, not as zarr stores such as the ones found in [**HYCOM OceanTrack**](https://registry.opendata.aws/hycom-global-drifters/index.html). The same script was used to advect particles *backward* in time by simply negating the `dt` variable in this code.
+
+- `parcels/select-particles-for-saving.py` : Python script used to select the particles ids which will can be found in all sets at each depth.
+
 - `parcels/make-ragged-from-parcels-pra.py` : Python script used to 
     - assemble foward and backward simulations into a single zarr file,
     - calculate Lagrangian velocities using [clouddrift](https://github.com/Cloud-Drift/clouddrift),
     - create the data mask for estimated grounding (or beaching) of the particles.
- 
+
+    This script was used to assemble the 0 m trajectories. A similar script was used to assemble the 15 m trajectories. 
