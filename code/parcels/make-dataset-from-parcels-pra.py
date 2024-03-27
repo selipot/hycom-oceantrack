@@ -5,6 +5,7 @@ import zarr
 import dask
 from datetime import datetime, timedelta
 from clouddrift.kinematics import velocity_from_position
+from clouddrift.sphere import recast_lon180
 import sys
 
 # define the step from input
@@ -68,6 +69,9 @@ v = v.chunk(chunks=data_vars["lat"][1].chunksize)
 # convert velocities to m/s instead of meter per ns
 ds["ve"] = 1e9*u.astype('float32')
 ds["vn"] = 1e9*v.astype('float32')
+
+# recast longitudes in [180,180)
+ds["lon"]= xr.DataArray(recast_lon180(ds["lon"].data), dims=ds["lon"].dims)
 
 # assign attributes
 # no need to assign attributes for time variable which is taken care of by datetime and zarr
