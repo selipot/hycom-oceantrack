@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/749082395.svg)](https://zenodo.org/doi/10.5281/zenodo.11193405)
+
 # hycom-oceantrack
 
 This repository accompanies [**HYCOM OceanTrack:  Integrated HYCOM Eulerian Fields and Lagrangian Trajectories Dataset**](https://registry.opendata.aws/hycom-global-drifters/index.html) which is available through the AWS Open Data program. 
