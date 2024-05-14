@@ -1,0 +1,24 @@
+{
+    "creators": [
+        {
+            "orcid": "0000-0001-6051-5426",
+            "affiliation": "Rosenstiel School of Marine, Atmospheric, and Earth science, University of Miami",
+            "name": "Elipot, Shane"
+        },
+        {
+            "orcid": "0009-0001-6723-531X",
+            "affiliation": "Rosenstiel School of Marine, Atmospheric, and Earth science, University of Miami",
+            "name": "Faigle, Eli"
+        }
+    ],
+
+    "title": "selipot/hycom-oceantrack: v1.0.0",
+
+    "related_identifiers": [
+        {
+            "scheme": "doi",
+            "identifier": "10.5281/zenodo.11193406",
+        }
+    ],
+
+}
