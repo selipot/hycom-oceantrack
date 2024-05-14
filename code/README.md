@@ -1,6 +1,6 @@
 ## File List
 
-Here we provide samples of python scripts that were used to generate the datasets found in [**HYCOM OceanTrack:  Integrated HYCOM Eulerian Fields and Lagrangian Trajectories Dataset**](https://registry.opendata.aws/hycom-global-drifters/index.html) which is available through the AWS Open Data program. 
+Here we provide samples of python scripts that were used to generate the datasets found in [**HYCOM-OceanTrack:  Integrated HYCOM Eulerian Fields and Lagrangian Trajectories Dataset**](https://registry.opendata.aws/hycom-global-drifters/index.html) which is available through the AWS Open Data program. 
 
 In the `convert/` directory, we provide example python scripts that were used to convert individual velocity and Sea Surface Height (SSH) NetCDF files into zarr archives thanks to the [rechunker](https://github.com/pangeo-data/rechunker) Python package. This library was written following the epic community [discussion](https://discourse.pangeo.io/t/best-practices-to-go-from-1000s-of-netcdf-files-to-analyses-on-a-hpc-cluster/588) that occured on [Pangeo](https://pangeo.io).
 
