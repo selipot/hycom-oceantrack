@@ -2,16 +2,25 @@
     "creators": [
         {
             "orcid": "0000-0001-6051-5426",
-            "affiliation": "Rosenstiel School of Marine, Atmospheric, and Earth science, University of Miami",
+            "affiliation": "Rosenstiel School of Marine, Atmospheric, and Earth Science, University of Miami",
             "name": "Elipot, Shane"
         },
         {
             "orcid": "0009-0001-6723-531X",
-            "affiliation": "Rosenstiel School of Marine, Atmospheric, and Earth science, University of Miami",
+            "affiliation": "Rosenstiel School of Marine, Atmospheric, and Earth Science, University of Miami",
             "name": "Faigle, Eli"
         }
     ],
-
     "title": "selipot/hycom-oceantrack: v1.0.1",
-
+    "description": "A brief description of the project or software.",
+    "version": "v1.0.1",
+    "upload_type": "software",
+    "access_right": "open",
+    "license": "MIT",
+    "communities": [
+        {
+            "identifier": "oceanography"
+        }
+    ],
+    "publication_date": "2024-07-24"
 }
