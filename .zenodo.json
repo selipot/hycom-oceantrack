@@ -12,13 +12,6 @@
         }
     ],
 
-    "title": "selipot/hycom-oceantrack: v1.0.0",
-
-    "related_identifiers": [
-        {
-            "scheme": "doi",
-            "identifier": "10.5281/zenodo.11193406",
-        }
-    ],
+    "title": "selipot/hycom-oceantrack: v1.0.1",
 
 }
