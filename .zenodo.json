@@ -2,10 +2,13 @@
     "creators": [
         {
             "orcid": "0000-0001-6051-5426",
-            "affiliation": "Rosenstiel School of Marine, Atmospheric, and Earth Science, University of Miami",
+            "affiliation": "Rosenstiel School of Marine, Atmospheric, and Earth science, University of Miami",
             "name": "Elipot, Shane"
+        },
+        {
+            "orcid": "0009-0001-6723-531X",
+            "affiliation": "Rosenstiel School of Marine, Atmospheric, and Earth science, University of Miami",
+            "name": "Faigle, Eli"
         }
-    ],
-
-    "license": "MIT"
+    ]
 }
